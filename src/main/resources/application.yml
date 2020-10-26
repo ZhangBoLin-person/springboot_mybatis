@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    username: root
+    password: tommy
+    url: jdbc:mysql:///springboot_demo?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  profiles:
+    active: dev
+mybatis:
+  type-aliases-package: com.sanyue.pojo
+  mapper-locations: classpath:mybatis/mapper/UserMapper.xml
